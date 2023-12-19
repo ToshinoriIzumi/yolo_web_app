@@ -1,6 +1,9 @@
 # ベースとなるイメージを指定
 FROM python:3.10.11-slim-buster
 
+RUN apt-get update && apt-get upgrade -y &&\
+    apt-get install -y libgl1-mesa-dev libglib2.0-0
+
 # ディレクトリを作成し、作業用ディレクトリに指定する。
 RUN mkdir /opt/app
 WORKDIR /opt/app
