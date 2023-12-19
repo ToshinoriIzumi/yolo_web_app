@@ -25,5 +25,3 @@ docker run -p 8501:8501 -v $(pwd)/src:/opt/app/src --rm  --name yolo_web_app -it
 ```
 ctr(コントロール) + c
 ```
-
-# yolo_web_app
